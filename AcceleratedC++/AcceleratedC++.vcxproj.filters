@@ -54,124 +54,124 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Handle.cpp">
+    <ClCompile Include="Source\Generate_sentences\gen_sentence.cpp">
+      <Filter>Source Files\Generate_sentences</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generate_sentences\main3.cpp">
+      <Filter>Source Files\Generate_sentences</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generate_sentences\nrand.cpp">
+      <Filter>Source Files\Generate_sentences</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generate_sentences\read_grammar.cpp">
+      <Filter>Source Files\Generate_sentences</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\analysis.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\average.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\extract_fails.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\grade.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\main1.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\main2.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\median.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students\Student_info.cpp">
+      <Filter>Source Files\Grading_students</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students_v2\Core.cpp">
+      <Filter>Source Files\Grading_students_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students_v2\Grad.cpp">
+      <Filter>Source Files\Grading_students_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students_v2\main4.cpp">
+      <Filter>Source Files\Grading_students_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students_v2\main5.cpp">
+      <Filter>Source Files\Grading_students_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students_v2\Student_info2.cpp">
+      <Filter>Source Files\Grading_students_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grading_students_v2\Student_info3.cpp">
+      <Filter>Source Files\Grading_students_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Handle\Handle.cpp">
       <Filter>Source Files\Handle</Filter>
     </ClCompile>
-    <ClCompile Include="Ref_handle.cpp">
+    <ClCompile Include="Source\Handle\Ptr.cpp">
       <Filter>Source Files\Handle</Filter>
     </ClCompile>
-    <ClCompile Include="Ptr.cpp">
+    <ClCompile Include="Source\Handle\Ref_handle.cpp">
       <Filter>Source Files\Handle</Filter>
     </ClCompile>
-    <ClCompile Include="find_urls.cpp">
-      <Filter>Source Files\String</Filter>
-    </ClCompile>
-    <ClCompile Include="is_palindrome.cpp">
-      <Filter>Source Files\String</Filter>
-    </ClCompile>
-    <ClCompile Include="split.cpp">
-      <Filter>Source Files\String</Filter>
-    </ClCompile>
-    <ClCompile Include="analysis.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="median.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="average.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="grade.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="xref.cpp">
-      <Filter>Source Files\String</Filter>
-    </ClCompile>
-    <ClCompile Include="nrand.cpp">
-      <Filter>Source Files\Generate_sentences</Filter>
-    </ClCompile>
-    <ClCompile Include="extract_fails.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="main1.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="main2.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="Student_info.cpp">
-      <Filter>Source Files\Grading_students</Filter>
-    </ClCompile>
-    <ClCompile Include="main3.cpp">
-      <Filter>Source Files\Generate_sentences</Filter>
-    </ClCompile>
-    <ClCompile Include="read_grammar.cpp">
-      <Filter>Source Files\Generate_sentences</Filter>
-    </ClCompile>
-    <ClCompile Include="gen_sentence.cpp">
-      <Filter>Source Files\Generate_sentences</Filter>
-    </ClCompile>
-    <ClCompile Include="iterator_types.cpp">
-      <Filter>Source Files\Iterator_types</Filter>
-    </ClCompile>
-    <ClCompile Include="duplicate_chars.cpp">
-      <Filter>Source Files\String</Filter>
-    </ClCompile>
-    <ClCompile Include="Vec.cpp">
-      <Filter>Source Files\Vec</Filter>
-    </ClCompile>
-    <ClCompile Include="Str.cpp">
+    <ClCompile Include="Source\Str\Str.cpp">
       <Filter>Source Files\Str</Filter>
     </ClCompile>
-    <ClCompile Include="Core.cpp">
-      <Filter>Source Files\Grading_students_v2</Filter>
+    <ClCompile Include="Source\Iterator_types\iterator_types.cpp">
+      <Filter>Source Files\Iterator_types</Filter>
     </ClCompile>
-    <ClCompile Include="Grad.cpp">
-      <Filter>Source Files\Grading_students_v2</Filter>
+    <ClCompile Include="Source\Vec\Vec.cpp">
+      <Filter>Source Files\Vec</Filter>
     </ClCompile>
-    <ClCompile Include="main4.cpp">
-      <Filter>Source Files\Grading_students_v2</Filter>
+    <ClCompile Include="Source\String\duplicate_chars.cpp">
+      <Filter>Source Files\String</Filter>
     </ClCompile>
-    <ClCompile Include="Student_info2.cpp">
-      <Filter>Source Files\Grading_students_v2</Filter>
+    <ClCompile Include="Source\String\find_urls.cpp">
+      <Filter>Source Files\String</Filter>
     </ClCompile>
-    <ClCompile Include="Student_info3.cpp">
-      <Filter>Source Files\Grading_students_v2</Filter>
+    <ClCompile Include="Source\String\is_palindrome.cpp">
+      <Filter>Source Files\String</Filter>
     </ClCompile>
-    <ClCompile Include="main5.cpp">
-      <Filter>Source Files\Grading_students_v2</Filter>
+    <ClCompile Include="Source\String\split.cpp">
+      <Filter>Source Files\String</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\String\xref.cpp">
+      <Filter>Source Files\String</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="average.h">
-      <Filter>Header Files\Grading_students</Filter>
-    </ClInclude>
-    <ClInclude Include="grade.h">
-      <Filter>Header Files\Grading_students</Filter>
-    </ClInclude>
-    <ClInclude Include="median.h">
-      <Filter>Header Files\Grading_students</Filter>
-    </ClInclude>
-    <ClInclude Include="Student_info.h">
-      <Filter>Header Files\Grading_students</Filter>
-    </ClInclude>
-    <ClInclude Include="split.h">
-      <Filter>Header Files\String</Filter>
-    </ClInclude>
-    <ClInclude Include="Core.h">
-      <Filter>Header Files\Grading_students_v2</Filter>
-    </ClInclude>
-    <ClInclude Include="read_grammar.h">
+    <ClInclude Include="Headers\Generate_sentences\read_grammar.h">
       <Filter>Header Files\Generate_sentences</Filter>
     </ClInclude>
-    <ClInclude Include="Grad.h">
+    <ClInclude Include="Headers\Grading_students\average.h">
+      <Filter>Header Files\Grading_students</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Grading_students\grade.h">
+      <Filter>Header Files\Grading_students</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Grading_students\median.h">
+      <Filter>Header Files\Grading_students</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Grading_students\Student_info.h">
+      <Filter>Header Files\Grading_students</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Grading_students_v2\Core.h">
       <Filter>Header Files\Grading_students_v2</Filter>
     </ClInclude>
-    <ClInclude Include="Picture.h">
+    <ClInclude Include="Headers\Grading_students_v2\Grad.h">
+      <Filter>Header Files\Grading_students_v2</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Picture_framing\Pic.h">
       <Filter>Header Files\Picture_framing</Filter>
     </ClInclude>
-    <ClInclude Include="Pic.h">
+    <ClInclude Include="Headers\Picture_framing\Picture.h">
       <Filter>Header Files\Picture_framing</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\String\split.h">
+      <Filter>Header Files\String</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
