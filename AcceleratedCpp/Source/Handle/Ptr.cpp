@@ -31,13 +31,14 @@ class Ptr {
 
 public:
 
-	Ptr() : p(0), refptr(new size_t(1)) {}
+	// Set refptr to 1. In destructor we decrement, and if zero, call delete.
+	Ptr() : p(nullptr), refptr(new size_t(1)) {}
 
 	// Must never call this constructor multiple times with the same ptr.
 	// To create multiple handles pointing to same ptr, use copy construct.
 	Ptr(T* t) : p(t), refptr(new size_t(1)) {}
 
-	Ptr(const Ptr& h) : p(h.p), refptr(h.refptr) {
+	Ptr(const Ptr &h) : p(h.p), refptr(h.refptr) {
 		++(*refptr);
 	}
 
@@ -59,14 +60,14 @@ public:
 			// Instead, introduce a layer of indirection which either
 			// calls p->clone() if it exists, or our own implementation
 			// if it doesn't through our template specialisation.
-			// p = p ? p->clone() : 0;
-			p = p ? clone(p) : 0; // Call global (non-member) clone()
+			// p = p ? p->clone() : nullptr;
+			p = p ? clone(p) : nullptr; // Call global (non-member) clone()
 		}
 	}
 
-	Ptr& operator=(const Ptr& rhs) {
+	Ptr& operator=(const Ptr &rhs) {
 		// Self-assignment guard is subtle here. Increment ref count
-		// on rhs before decrement on ref count on lhs. If both operands
+		// on rhs before decrement ref count on lhs. If both operands
 		// refer to the same object, the net effect will be to leave ref
 		// count unchanged.
 		++(*(rhs.refptr));
