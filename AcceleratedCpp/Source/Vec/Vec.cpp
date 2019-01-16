@@ -15,7 +15,7 @@ public:
 	typedef T& reference;
 	typedef const T& const_reference;
 
-private :
+private:
 
 	iterator data; // First data element (p.189)
 
@@ -31,7 +31,7 @@ public:
 	Vec() { create(); }
 
 	// Construct with n copies of val (p.190)
-	explicit Vec(size_t n, const T& val = T()) { create(n, val); }
+	explicit Vec(const size_t &n, const T& val = T()) { create(n, val); }
 	
 	// Copy constructor (p.195)
 	Vec(const Vec &v) { create(v.begin(), v.end()); }
@@ -81,15 +81,15 @@ public:
 	}
 
 	iterator begin() { return data; } // (p.194)
-	const_iterator begin() const { return data; } // (p.194)
+	const_iterator cbegin() const { return data; } // (p.194)
 
 	iterator end() { return avail; } // (p.193)
-	const_iterator end() const { return avail; } // (p.193)
+	const_iterator cend() const { return avail; } // (p.193)
 
 private:
 
 	// create() methods - allocate and initialise the underlying array (p.207)
-	void create() { data = avail = limit = 0; }
+	void create() { data = avail = limit = nullptr; }
 
 	void create(const size_t &n, const T& val) {
 		data = alloc.allocate(n);
@@ -116,7 +116,7 @@ private:
 			alloc.deallocate(data, limit - data);
 
 			// Reset pointers to indicate Vec is empty again
-			data = avail = limit = 0;
+			data = avail = limit = nullptr;
 		}
 	}
 
@@ -124,7 +124,7 @@ private:
 	void grow() {
 		// When growing, allocate twice as much space as currently in use.
 		// Types passed to max must be identical.
-		size_type new_size = std::max(2 * (limit - data), ptrdiff_t(1));
+		const size_type new_size = std::max(2 * (limit - data), ptrdiff_t(1));
 
 		// Allocate new space and copy existing elements to new space
 		iterator new_data = alloc.allocate(new_size);
