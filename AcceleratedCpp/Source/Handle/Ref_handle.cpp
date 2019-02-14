@@ -20,7 +20,7 @@ class Ref_handle {
 
 public:
 
-	Ref_handle() : p(0), refptr(new size_t(1)) {}
+	Ref_handle() : p(nullptr), refptr(new size_t(1)) {}
 
 	// Must never call this constructor multiple times with the same ptr.
 	// To create multiple handles pointing to same ptr, use copy construct.
