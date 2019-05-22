@@ -57,10 +57,12 @@ public:
 			refptr = new size_t(1);
 			
 			// This forces underlying object to always define clone.
+			// p = p ? p->clone() : nullptr;
+
 			// Instead, introduce a layer of indirection which either
 			// calls p->clone() if it exists, or our own implementation
 			// if it doesn't through our template specialisation.
-			// p = p ? p->clone() : nullptr;
+			
 			p = p ? clone(p) : nullptr; // Call global (non-member) clone()
 		}
 	}
